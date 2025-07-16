@@ -1,0 +1,25 @@
+name: SculkSignal
+version: '${version}'
+main: com.sculksignal.SculkSignalPlugin
+api-version: '1.21'
+author: voidfemme
+description: Long-distance calibrated sculk sensor signal transmission
+website: https://github.com/voidfemme/sculksignal
+
+commands:
+  sculksignal:
+    description: Main SculkSignal command
+    aliases: [ss, signal]
+    permission: sculksignal.use
+    usage: /<command> [register|unregister|list|info|reload]
+
+permissions:
+  sculksignal.use:
+    description: Basic SculkSignal usage
+    default: true
+  sculksignal.admin:
+    description: Administrative commands
+    default: op
+  sculksignal.register:
+    description: Register sculk sensors
+    default: true

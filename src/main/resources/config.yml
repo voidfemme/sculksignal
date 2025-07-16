@@ -1,0 +1,26 @@
+# SculkSignal Configuration
+
+# Chunk loading settings
+chunk-loading:
+  # Maximum time to keep chunks loaded (in ticks)
+  max-load-time: 100
+  # Delay before unloading chunks after signal passes (in ticks)
+  unload-delay: 20
+  # Maximum chunks that can be loaded simultaneously
+  max-loaded-chunks: 50
+
+# Network settings
+network:
+  # Maximum range for automatic sensor discovery
+  discovery-range: 32
+  # Enable debug logging
+  debug: false
+  # Save network data to file
+  persist-network: true
+
+# Signal transmission settings
+transmission:
+  # Supported sculk sensor frequencies (9-13 for block events)
+  supported-frequencies: [9, 10, 11, 12, 13]
+  # Signal propagation delay per chunk (in ticks)
+  propagation-delay: 5
